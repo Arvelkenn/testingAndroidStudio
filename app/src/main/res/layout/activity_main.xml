@@ -13,5 +13,66 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Makan Malam"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="dengan Milea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="59dp"
+        android:id="@+id/menuMakanan"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:hint="Menu Makanan" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/menuMakanan"
+        android:layout_alignRight="@+id/menuMakanan"
+        android:layout_alignEnd="@+id/menuMakanan"
+        android:layout_marginTop="20dp"
+        android:id="@+id/porsiMakanan"
+        android:hint="Porsi Makanan" />
+
+    <Button
+        android:text="ABNORMAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/eatbusButton"
+        android:layout_alignRight="@+id/porsiMakanan"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:layout_alignEnd="@+id/porsiMakanan"
+        android:onClick="onClickAbnormal"
+        android:id="@+id/abnormalButton" />
+
+    <Button
+        android:text="Eatbus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/eatbusButton"
+        android:onClick="onClickEatbus"
+        android:layout_below="@+id/porsiMakanan"
+        android:layout_alignLeft="@+id/porsiMakanan"
+        android:layout_alignStart="@+id/porsiMakanan" />
 </RelativeLayout>
